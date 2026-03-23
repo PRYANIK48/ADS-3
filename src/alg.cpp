@@ -40,6 +40,7 @@ unsigned int seqCollatz(unsigned int* maxlen,
     unsigned int max = 1;
     for (uint64_t i = lbound; i <= rbound; i++) {
         if (max < collatzLen(i)) {
+            max = collatzLen(i);
             num = i;
         }
     }
