@@ -38,8 +38,7 @@ unsigned int seqCollatz(unsigned int* maxlen,
     uint64_t rbound) {
     unsigned int num = 1;
     unsigned int max = 1;
-    for (uint64_t i = lbound; i <= rbound; i++)
-    {
+    for (uint64_t i = lbound; i <= rbound; i++) {
         if (max < collatzLen(i)) {
             num = i;
         }
